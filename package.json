@@ -1,0 +1,19 @@
+{
+  "name": "Trillo",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "build:css": "npm-run-all compile:sass"
+  },
+  "author": "Serge",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  }
+}
